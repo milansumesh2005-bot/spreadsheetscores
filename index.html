@@ -100,7 +100,13 @@
   .xl-statusbar {
     background: #217346; color: rgba(255,255,255,0.9);
     font-size: 10px; padding: 2px 12px;
-    display: flex; justify-content: space-between;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .xl-statusbar a {
+    color: rgba(255,255,255,0.7); text-decoration: none; cursor: pointer;
+  }
+  .xl-statusbar a:hover {
+    color: #fff; text-decoration: underline;
   }
   .hint-pill {
     background: rgba(255,255,255,0.2); border-radius: 10px;
@@ -211,7 +217,7 @@
   <div class="xl-statusbar">
     <span>Ready</span>
     <span class="hint-pill" onclick="toggleMode()">Press ESC for full view</span>
-    <span id="status-count">World Cup 2026</span>
+    <a href="https://buymeacoffee.com/spreadsheetscores" target="_blank" style="font-size:9px;">Support this project</a>
   </div>
 </div>
 
@@ -420,3 +426,4 @@ renderExcelMode();
 </script>
 </body>
 </html>
+ENDOFFILE
